@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480" fill="none">
+  <g stroke="#14314e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <!-- roof -->
+    <path d="M120 220 L300 90 L480 220" stroke-opacity="0.16"/>
+    <path d="M140 222 L300 108 L462 222" stroke-opacity="0.1"/>
+    <!-- walls -->
+    <rect x="150" y="220" width="300" height="200" stroke-opacity="0.16"/>
+    <!-- chimney -->
+    <path d="M400 150 L400 100 L430 100 L430 172" stroke-opacity="0.14"/>
+    <!-- door -->
+    <path d="M270 420 L270 320 Q270 300 300 300 Q330 300 330 320 L330 420" stroke-opacity="0.16"/>
+    <!-- windows -->
+    <rect x="185" y="255" width="55" height="55" stroke-opacity="0.14"/>
+    <path d="M185 282 H240 M212 255 V310" stroke-opacity="0.14"/>
+    <rect x="360" y="255" width="55" height="55" stroke-opacity="0.14"/>
+    <path d="M360 282 H415 M387 255 V310" stroke-opacity="0.14"/>
+    <!-- construction / measurement lines -->
+    <path d="M60 420 H500" stroke-dasharray="2 8" stroke-opacity="0.12"/>
+    <path d="M90 420 V440 M470 420 V440" stroke-opacity="0.1"/>
+    <path d="M40 220 L120 220 M480 220 L540 220" stroke-dasharray="2 6" stroke-opacity="0.1"/>
+    <path d="M300 90 V40 M270 60 L330 60" stroke-dasharray="2 6" stroke-opacity="0.08"/>
+    <!-- reference points -->
+    <circle cx="300" cy="90" r="4" stroke-opacity="0.14"/>
+    <circle cx="150" cy="420" r="3" stroke-opacity="0.12"/>
+    <circle cx="450" cy="420" r="3" stroke-opacity="0.12"/>
+    <circle cx="60" cy="420" r="2.5" stroke-opacity="0.1"/>
+    <circle cx="500" cy="420" r="2.5" stroke-opacity="0.1"/>
+  </g>
+</svg>
