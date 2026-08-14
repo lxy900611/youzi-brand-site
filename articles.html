@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>柚子的房產文章總覽｜中壢房產顧問柚子</title>
+<meta name="description" content="房價行情、房產稅務、買賣糾紛、買賣眉角，中壢房產顧問柚子整理的所有房產知識文章，依分類快速找到你需要的內容。">
+<link rel="canonical" href="https://yozihouse.tw/articles.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .archive-hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 48px 24px 36px;
+    text-align: center;
+  }
+  .archive-hero p.eyebrow { color: var(--gold-light); font-weight: 700; letter-spacing: 0.12em; font-size: 0.8rem; margin: 0 0 8px; }
+  .archive-hero h1 { margin: 0 0 10px; font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  .archive-hero p.sub { color: rgba(255,255,255,0.8); margin: 0; }
+
+  .filter-bar {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .filter-btn {
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--gold); }
+  .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+  .archive-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 28px 24px 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .archive-grid .post-card.hidden { display: none; }
+  @media (max-width: 860px) {
+    .archive-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .archive-grid { grid-template-columns: 1fr; gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📞 0968-877-611　|　中壢房產顧問柚子</span>
+    <a href="https://line.me/ti/p/1oOrGNBjI6" class="topbar-btn" target="_blank" rel="noopener">LINE 免費諮詢</a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="https://yozihouse.tw/" class="logo"><img src="assets/img/logo.png" alt="柚子 Logo" class="logo-img">中壢房產顧問柚子</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">首頁</a>
+      <a href="/#about">關於我</a>
+      <a href="/#why">服務特色</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger">房產文章 <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/#knowledge">🎬 影片</a>
+          <a href="/articles.html">📝 圖文</a>
+        </div>
+      </div>
+      <a href="/#tools">免費工具</a>
+      <a href="/#contact">聯絡我</a>
+    </nav>
+  </div>
+</header>
+
+<section class="archive-hero">
+  <p class="eyebrow">ARTICLES</p>
+  <h1>柚子的房產文章總覽</h1>
+  <p class="sub">依分類快速找到你需要的內容</p>
+</section>
+
+<div class="filter-bar" id="filterBar">
+  <button type="button" class="filter-btn active" data-filter="all">全部</button>
+  <button type="button" class="filter-btn" data-filter="price">📊 房價行情</button>
+  <button type="button" class="filter-btn" data-filter="tax">📐 房產稅務</button>
+  <button type="button" class="filter-btn" data-filter="dispute">⚠️ 買賣糾紛</button>
+  <button type="button" class="filter-btn" data-filter="tips">🏗️ 買賣眉角</button>
+</div>
+
+<div class="archive-grid" id="archiveGrid">
+  <a class="post-card" data-category="price" href="/zhongli-pingzhen-price-2026.html">
+    <img src="assets/img/articles/zhongli-pingzhen-price-2026.jpg" alt="中壢平鎮房價行情2026" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">📊 房價行情</span>
+      <h3>中壢平鎮房價行情2026：實價登錄怎麼查？</h3>
+      <p>開價不是成交價，3步驟教你自己查真實行情。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="tax" href="/house-tax-2026.html">
+    <img src="assets/img/articles/house-tax-2026.jpg" alt="房地合一稅2026完整解析" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">📐 房產稅務</span>
+      <h3>房地合一稅2026完整解析：稅率、持有期間怎麼算</h3>
+      <p>持有時間差1天，稅率可能差到2倍以上。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="tax" href="/land-value-tax.html">
+    <img src="assets/img/articles/land-value-tax.jpg" alt="土地增值稅是什麼" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">📐 房產稅務</span>
+      <h3>土地增值稅是什麼？跟房地合一稅差在哪</h3>
+      <p>賣房子常常兩筆稅都要繳，搞懂差異才不會被嚇到。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="tax" href="/deed-tax.html">
+    <img src="assets/img/articles/deed-tax.jpg" alt="契稅買房必繳的小稅" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">📐 房產稅務</span>
+      <h3>契稅：買房必繳的小稅，常被忽略</h3>
+      <p>金額不大但常被算漏，交屋前資金規劃一定要算進去。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="tax" href="/house-tax-rate.html">
+    <img src="assets/img/articles/house-tax-rate.jpg" alt="房屋稅自住非自住稅率差別" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">📐 房產稅務</span>
+      <h3>房屋稅：自住 vs 非自住稅率差別</h3>
+      <p>名下房子越多，稅率可能跳得比想像中快。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="tips" href="/presale-payment.html">
+    <img src="assets/img/articles/presale-payment.jpg" alt="預售屋匯款規則分期付款怎麼算" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">🏗️ 買賣眉角</span>
+      <h3>預售屋匯款規則：分期付款怎麼算</h3>
+      <p>簽約前搞懂付款節奏，交屋前才不會措手不及。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="dispute" href="/water-leak-dispute.html">
+    <img src="assets/img/articles/water-leak-dispute.jpg" alt="買到漏水屋怎麼辦" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">⚠️ 買賣糾紛</span>
+      <h3>買到漏水屋怎麼辦？交屋前後的處理方式</h3>
+      <p>漏水是最常見的交易糾紛，看屋時多留意。</p>
+    </div>
+  </a>
+  <a class="post-card" data-category="dispute" href="/haunted-house.html">
+    <img src="assets/img/articles/haunted-house.jpg" alt="凶宅怎麼認定" class="article-thumb">
+    <div class="post-body">
+      <span class="post-tag post-tag-knowledge">⚠️ 買賣糾紛</span>
+      <h3>凶宅怎麼認定？買房前必懂的判斷標準</h3>
+      <p>不是所有事故屋都叫凶宅，搞懂認定標準不被騙。</p>
+    </div>
+  </a>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>中壢房產顧問柚子</h4>
+      <p>提供不動產專業資訊與時事，讓買房賣房公開透明，服務買方與賣方。</p>
+    </div>
+    <div class="footer-col">
+      <h4>聯繫柚子</h4>
+      <ul>
+        <li>📞 0968-877-611</li>
+        <li><a href="https://line.me/ti/p/1oOrGNBjI6" target="_blank" rel="noopener">LINE 加好友</a></li>
+        <li><a href="https://www.facebook.com/xian.w.jing/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/xy_0611/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>更多資源</h4>
+      <ul>
+        <li><a href="/">回首頁</a></li>
+        <li><a href="https://calc.yozihouse.tw/housetax/" target="_blank" rel="noopener">房地合一稅試算</a></li>
+        <li><a href="https://calc.yozihouse.tw/afford/" target="_blank" rel="noopener">購屋能力試算</a></li>
+        <li><a href="https://map.yozihouse.tw/" target="_blank" rel="noopener">學區地圖查詢</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>中壢房產顧問柚子 © 2026 All Rights Reserved.</p>
+    <p class="footer-legal">有巢氏房屋 中壢站前元化加盟店｜經紀業：巨業不動產經紀有限公司</p>
+  </div>
+</footer>
+
+<div class="float-bar">
+  <a href="https://line.me/ti/p/1oOrGNBjI6" class="float-btn float-line" target="_blank" rel="noopener">LINE 諮詢</a>
+  <a href="tel:0968877611" class="float-btn float-call">撥打電話</a>
+</div>
+
+<script src="assets/main.js"></script>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.archive-grid .post-card');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      cards.forEach(function (card) {
+        var show = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
