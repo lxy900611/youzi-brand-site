@@ -401,7 +401,11 @@ body { padding-bottom: 54px; }
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
-  .grid-4, .grid-3 { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .topbar-inner { font-size: 0.75rem; }
+  .section { padding: 36px 16px; }
+  .section-sub { margin-bottom: 20px; }
+  .grid-4, .grid-3 { gap: 12px; }
+  .card { padding: 16px 12px; }
+  .post-body { padding: 12px 14px 16px; }
 }
