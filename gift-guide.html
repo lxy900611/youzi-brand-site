@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贈與懶人包｜送房給家人前，先看這篇｜中壢房產顧問柚子</title>
+<meta name="description" content="贈與房產給家人，貸款沒轉移會怎樣？陳幸妤 6000 萬診所案例教訓，中壢房產顧問柚子整理贈與避坑攻略、3 步驟預防法。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* 懶人包專用樣式，沿用品牌色彩變數 */
+  .guide-hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 56px 24px 44px;
+    text-align: center;
+  }
+  .guide-hero .eyebrow { color: var(--gold-light); }
+  .guide-hero h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    margin: 12px 0 16px;
+    line-height: 1.5;
+  }
+  .guide-hero h1 mark {
+    background: none;
+    color: var(--gold-light);
+  }
+  .guide-hero p {
+    color: rgba(255,255,255,0.85);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .quote-block {
+    max-width: 720px;
+    margin: -28px auto 0;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(20,49,78,0.18);
+    padding: 28px 28px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  .quote-block .quote-mark { font-size: 2.4rem; color: var(--gold); line-height: 1; }
+  .quote-block p {
+    font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+    font-weight: 700;
+    color: var(--navy);
+    margin: 8px 0 10px;
+  }
+  .quote-block span { color: var(--text-muted); font-size: 0.85rem; }
+
+  .guide-section { max-width: 760px; margin: 0 auto; padding: 44px 24px; }
+  .guide-section h2 {
+    color: var(--navy);
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    margin: 0 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .guide-section h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+  .guide-section p { color: var(--text); margin: 0 0 14px; }
+  .guide-alt { background: var(--bg-alt); }
+
+  .reason-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .reason-card h3 { margin: 0 0 6px; color: var(--navy); font-size: 1.02rem; }
+  .reason-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+  .step-list { counter-reset: step; }
+  .step-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+  .step-num {
+    counter-increment: step;
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  .step-body h3 { margin: 4px 0 6px; color: var(--navy); font-size: 1.02rem; }
+  .step-body p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 0.98rem;
+    display: flex;
+    gap: 8px;
+  }
+  .faq-item p { margin: 0; color: var(--text-muted); font-size: 0.92rem; }
+
+  .checklist { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border);
+    color: var(--text);
+    font-size: 0.96rem;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before { content: "✅"; flex-shrink: 0; }
+
+  .guide-cta {
+    background: var(--gold);
+    color: var(--navy);
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .guide-cta h2 { margin: 0 0 10px; font-size: clamp(1.3rem, 3vw, 1.8rem); }
+  .guide-cta p { max-width: 480px; margin: 0 auto 22px; }
+  .guide-cta .btn-primary { background: var(--navy); color: #fff; }
+  .guide-cta .btn-outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+
+  .source-note {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin: 0 auto 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 頂部資訊列 -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📞 0968-877-611　|　中壢房產顧問柚子</span>
+    <a href="https://line.me/ti/p/1oOrGNBjI6" class="topbar-btn" target="_blank" rel="noopener">LINE 免費諮詢</a>
+  </div>
+</div>
+
+<!-- 導覽列 -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="https://lxy900611.github.io/youzi-brand-site/" class="logo"><img src="assets/img/logo.png" alt="柚子 Logo" class="logo-img">中壢房產顧問柚子</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="guide-hero">
+  <p class="eyebrow">贈與懶人包</p>
+  <h1>房子可以送人，<br>但<mark>貸款轉移</mark>這一步，不能省</h1>
+  <p>陳幸妤贈與 6000 萬診所給前夫的真實案例，教會我們一件事：贈與前不問清楚，等於簽一份無形的債務契約。</p>
+</section>
+
+<div class="quote-block">
+  <div class="quote-mark">"</div>
+  <p>我看過太多人這樣做，結果後悔到想殺死自己。</p>
+  <span>—— 陳幸妤，2026 年 8 月公開發言</span>
+</div>
+
+<!-- 案例 -->
+<section class="guide-section">
+  <h2><span class="num">1</span>真實案例：陳幸妤的 6000 萬診所</h2>
+  <p>她把價值 6000 萬的診所，透過夫妻贈與送給前夫趙建銘，心想「房子是我的禮物」。</p>
+  <p>後來，她和趙建銘離婚了。</p>
+  <p><strong>現在的局面：房子不是她的了，但 6000 萬的貸款，她還要繳。</strong></p>
+  <p>她在 Google 留言說：「夫妻贈與後的房地產，離婚後是不能列入財產分配的，請大家別跟我犯一樣的錯誤。」</p>
+</section>
+
+<!-- 為什麼會被套住 -->
+<section class="guide-section guide-alt">
+  <h2><span class="num">2</span>為什麼會被套住？3 個理由</h2>
+  <div class="reason-card">
+    <h3>① 貸款轉移，需要銀行同意</h3>
+    <p>贈與房子是民法的事，但貸款是銀行的事。銀行不會因為你把房子送人，就自動改借款人——要另外和銀行簽協議。</p>
+  </div>
+  <div class="reason-card">
+    <h3>② 配偶贈與滿 5 年後，法律上難以撤銷</h3>
+    <p>就算後來反悔，配偶間的贈與滿 5 年，法律上也很難拿回產權——這是保護婚姻期間善意贈與的規定。</p>
+  </div>
+  <div class="reason-card">
+    <h3>③ 你會變成「房子不是我的，貸款卻是我的」</h3>
+    <p>每個月銀行還是會跟你要錢，但房子已經是別人的了。新屋主不繳？銀行不會去找他，會來找你。</p>
+  </div>
+</section>
+
+<!-- 3 步驟預防法 -->
+<section class="guide-section">
+  <h2><span class="num">3</span>怎樣才能安全地送房給家人？</h2>
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>先問銀行</h3>
+        <p>在決定贈與之前，直接打電話問銀行：「我想把這間房子贈與給我小孩，貸款怎麼轉移？」銀行會告訴你完整程序。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>簽好文件</h3>
+        <p>不要口頭說「我送你這間房」就完事。贈與契約、貸款轉移協議，全部要簽——文件才是保護你和家人的東西。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>確認誰要繳貸款</h3>
+        <p>贈與契約裡要寫清楚：房子送給你，但貸款怎麼辦？是新屋主接手，還是原屋主繼續繳？要寫黑白，不要留空隙。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="guide-section guide-alt">
+  <h2><span class="num">4</span>常見問題 Q&amp;A</h2>
+  <div class="faq-item">
+    <h3>Q：我已經贈與了，但貸款還沒轉移，怎麼辦？</h3>
+    <p>A：越早處理越好，立即跟銀行聯絡辦理貸款轉移或協議變更，避免拖到爭議發生時更難處理。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：新屋主貸款審核沒過，銀行不同意轉移，怎麼辦？</h3>
+    <p>A：可以跟銀行討論其他擔保方式，或先由原屋主暫時持續繳款，同時尋求其他融資方案，銀行會依個案給建議。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：贈與房產需要繳稅嗎？</h3>
+    <p>A：需要。贈與有免稅額，超過部分需申報贈與稅，並辦理產權登記，建議找地政士或會計師協助，確保程序完整。</p>
+  </div>
+</section>
+
+<!-- 檢查清單 -->
+<section class="guide-section">
+  <h2><span class="num">5</span>贈與前檢查清單</h2>
+  <ul class="checklist">
+    <li>已經打電話問過銀行，確認貸款轉移程序</li>
+    <li>銀行同意轉移，或已確認替代方案</li>
+    <li>贈與契約已簽署</li>
+    <li>貸款轉移協議已簽署（如適用）</li>
+    <li>已白紙黑字寫清楚：貸款由誰繼續繳</li>
+  </ul>
+  <p class="source-note">內容整理自公開新聞報導與一般法律常識，僅供參考，實際狀況請洽詢銀行或專業地政士／律師。</p>
+</section>
+
+<!-- CTA -->
+<section class="guide-cta">
+  <h2>贈與前，先問柚子一句</h2>
+  <p>房子送給家人不是壞事，問清楚才是對彼此負責。中壢房產顧問柚子，陪你把每一步都搞清楚。</p>
+  <div class="hero-cta" style="justify-content:center;">
+    <a href="https://line.me/ti/p/1oOrGNBjI6" class="btn btn-primary" target="_blank" rel="noopener">LINE 免費諮詢柚子 →</a>
+    <a href="tel:0968877611" class="btn btn-outline">撥打電話</a>
+  </div>
+</section>
+
+<!-- 聯絡 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>中壢房產顧問柚子</h4>
+      <p>提供不動產專業資訊與時事，讓買房賣房公開透明，服務買方與賣方。</p>
+    </div>
+    <div class="footer-col">
+      <h4>聯繫柚子</h4>
+      <ul>
+        <li>📞 0968-877-611</li>
+        <li><a href="https://line.me/ti/p/1oOrGNBjI6" target="_blank" rel="noopener">LINE 加好友</a></li>
+        <li><a href="https://www.facebook.com/xian.w.jing/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/xy_0611/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>更多資源</h4>
+      <ul>
+        <li><a href="https://lxy900611.github.io/youzi-brand-site/">回首頁</a></li>
+        <li><a href="https://lxy900611.github.io/youzi-house-calc/capgain.html" target="_blank" rel="noopener">房地合一稅試算</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>中壢房產顧問柚子 © 2026 All Rights Reserved.</p>
+    <p class="footer-legal">有巢氏房屋 中壢站前元化加盟店｜經紀業：巨業不動產經紀有限公司</p>
+  </div>
+</footer>
+
+<!-- 懸浮按鈕 -->
+<div class="float-bar">
+  <a href="https://line.me/ti/p/1oOrGNBjI6" class="float-btn float-line" target="_blank" rel="noopener">LINE 諮詢</a>
+  <a href="tel:0968877611" class="float-btn float-call">撥打電話</a>
+</div>
+
+</body>
+</html>
