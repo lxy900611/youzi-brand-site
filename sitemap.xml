@@ -51,6 +51,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://yozihouse.tw/buying-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yozihouse.tw/articles.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
