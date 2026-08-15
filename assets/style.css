@@ -456,15 +456,15 @@ body { padding-bottom: 54px; }
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
-  .nav-dropdown { width: 100%; }
-  .nav-dropdown-trigger { width: 100%; justify-content: space-between; }
+  .nav-dropdown { display: flex; flex-direction: column; align-items: center; }
+  .nav-dropdown-trigger { justify-content: center; }
   .nav-dropdown-menu {
     position: static;
     box-shadow: none;
     border: none;
-    margin-top: 4px;
-    padding: 0 0 0 12px;
-    width: 100%;
+    margin-top: 8px;
+    padding: 0;
+    text-align: center;
   }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .topbar-inner { font-size: 0.75rem; }
