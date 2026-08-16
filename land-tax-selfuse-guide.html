@@ -25,7 +25,8 @@
     padding:18px 20px;
   }
   header.top img{width:36px;height:36px;border-radius:8px;object-fit:cover;}
-  header.top .brand-name{font-size:15px;font-weight:700;letter-spacing:0.5px;}
+  header.top a.brand-link{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  header.top .brand-name{font-size:15px;font-weight:700;letter-spacing:0.5px;color:var(--ink);}
   header.top .brand-name b{color:var(--brand);font-weight:900;}
 
   /* Hero */
@@ -127,6 +128,7 @@
     display:inline-block;margin-top:10px;
     background:var(--brand);color:#fff;font-weight:900;
     font-size:15px;padding:8px 22px;border-radius:999px;
+    text-decoration:none;
   }
 
   /* 社群 / 名片卡（依品牌設定，未提供則自動省略，此份未使用） */
@@ -151,8 +153,10 @@
 </style>
 
 <header class="top">
-  <img src="https://yozihouse.tw/assets/img/logo.png" alt="logo">
-  <div class="brand-name">中壢房產顧問 <b>柚子</b></div>
+  <a class="brand-link" href="https://yozihouse.tw/">
+    <img src="https://yozihouse.tw/assets/img/logo.png" alt="logo">
+    <div class="brand-name">中壢房產顧問 <b>柚子</b></div>
+  </a>
 </header>
 
 <div class="hero">
@@ -277,7 +281,7 @@
   <h3>不確定自己符不符合資格</h3>
   <p>把你去年地價稅單「稅率」那欄的數字截圖給我，我幫你對照這5個條件，順便看看還有沒有其他能節稅的地方。</p>
   <p>有關桃園房地產的問題，也歡迎找我聊聊。</p>
-  <div class="kw">留言「地價稅」私訊我</div>
+  <a class="kw" href="https://line.me/ti/p/1oOrGNBjI6" target="_blank" rel="noopener">加我LINE好友</a>
 </div>
 
 <footer class="page-foot">
