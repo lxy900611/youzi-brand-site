@@ -3,10 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   :root{
-    --bg:#FAF8F4;
-    --ink:#2C2A26;
-    --gold:#B89968;
-    --brand:#D9342B;
+    --bg:#F3F6F9;
+    --ink:#14314E;
+    --gold:#FFA93C;
+    --brand:#F28B2E;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
@@ -33,7 +33,7 @@
   .hero svg{width:100%;max-width:280px;height:auto;margin:0 auto 18px;display:block;}
   .hero h1{font-size:25px;font-weight:900;line-height:1.5;letter-spacing:0.5px;}
   .hero h1 .hl{color:var(--brand);}
-  .hero p.sub{margin-top:12px;font-size:14.5px;color:#5c5850;}
+  .hero p.sub{margin-top:12px;font-size:14.5px;color:#4C5C6E;}
 
   /* 章節卡片 */
   section.card{
@@ -41,7 +41,7 @@
     border-radius:18px;
     padding:22px 20px;
     margin:16px 20px;
-    box-shadow:0 4px 18px rgba(44,42,38,0.06);
+    box-shadow:0 4px 18px rgba(20,49,78,0.08);
     position:relative;
   }
   section.card .icon{
@@ -56,23 +56,23 @@
     margin-bottom:6px;
   }
   h2.ctitle{font-size:18.5px;font-weight:900;margin-bottom:4px;padding-right:40px;}
-  p.desc{font-size:14px;color:#5c5850;margin-bottom:14px;}
+  p.desc{font-size:14px;color:#4C5C6E;margin-bottom:14px;}
 
   /* 稅率對比 bar */
   .bar-row{margin-bottom:14px;}
   .bar-label{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px;}
   .bar-label b{font-weight:900;}
-  .bar-track{background:#F1EDE5;border-radius:8px;height:14px;overflow:hidden;}
+  .bar-track{background:#E7ECF1;border-radius:8px;height:14px;overflow:hidden;}
   .bar-fill{height:100%;border-radius:8px;}
   .bar-fill.low{width:20%;background:var(--gold);}
   .bar-fill.high{width:100%;background:var(--brand);}
-  .bar-note{margin-top:10px;font-size:13.5px;background:#FBF3EF;border-left:3px solid var(--brand);padding:10px 12px;border-radius:6px;}
+  .bar-note{margin-top:10px;font-size:13.5px;background:#FFF1E3;border-left:3px solid var(--brand);padding:10px 12px;border-radius:6px;}
 
   /* 情境 list */
   .situ-list{list-style:none;margin-top:4px;}
   .situ-list li{
     display:flex;gap:12px;align-items:flex-start;
-    padding:10px 0;border-top:1px solid #F0EDE6;
+    padding:10px 0;border-top:1px solid #E5E9EE;
     font-size:14px;
   }
   .situ-list li:first-child{border-top:none;}
@@ -83,18 +83,18 @@
   .check-list li{
     display:flex;gap:10px;align-items:flex-start;
     padding:9px 0;font-size:14px;
-    border-top:1px solid #F0EDE6;
+    border-top:1px solid #E5E9EE;
   }
   .check-list li:first-child{border-top:none;}
   .check-list li svg{flex-shrink:0;margin-top:2px;}
 
   /* 流程 steps */
   .step-list{margin-top:6px;}
-  .step{display:flex;gap:14px;padding:12px 0;border-top:1px dashed #E7E2D8;}
+  .step{display:flex;gap:14px;padding:12px 0;border-top:1px dashed #DCE3EA;}
   .step:first-child{border-top:none;}
   .step .snum{font-size:22px;font-weight:900;color:var(--gold);min-width:30px;line-height:1.2;}
   .step .stext b{display:block;font-size:14.5px;margin-bottom:2px;}
-  .step .stext span{font-size:13.5px;color:#5c5850;}
+  .step .stext span{font-size:13.5px;color:#4C5C6E;}
 
   /* 時間軸 */
   .timeline{margin-top:10px;}
@@ -103,26 +103,26 @@
   .tl-dot{width:12px;height:12px;border-radius:50%;margin-top:4px;flex-shrink:0;}
   .tl-dot.ok{background:var(--gold);}
   .tl-dot.bad{background:var(--brand);}
-  .tl-line{position:absolute;left:5px;top:16px;bottom:0;width:2px;background:#E7E2D8;}
+  .tl-line{position:absolute;left:5px;top:16px;bottom:0;width:2px;background:#DCE3EA;}
   .tl-text b{display:block;font-size:14.5px;}
-  .tl-text span{font-size:13.5px;color:#5c5850;}
+  .tl-text span{font-size:13.5px;color:#4C5C6E;}
 
   .foot-note{
-    font-size:12.5px;color:#8a8578;
-    background:#F5F2EB;border-radius:10px;padding:12px 14px;margin-top:14px;
+    font-size:12.5px;color:#6b7a8c;
+    background:#F3F6F9;border-radius:10px;padding:12px 14px;margin-top:14px;
   }
 
   /* CTA */
   .cta{
     margin:24px 20px 8px;
-    background:linear-gradient(135deg,#2C2A26,#3d3a34);
-    color:#FAF8F4;
+    background:linear-gradient(135deg,#14314E,#1d4a72);
+    color:#F3F6F9;
     border-radius:18px;
     padding:26px 22px;
     text-align:center;
   }
   .cta h3{font-size:19px;font-weight:900;margin-bottom:8px;}
-  .cta p{font-size:14px;color:#D9D5C9;margin-bottom:6px;}
+  .cta p{font-size:14px;color:#C9D3DE;margin-bottom:6px;}
   .cta .kw{
     display:inline-block;margin-top:10px;
     background:var(--brand);color:#fff;font-weight:900;
@@ -132,7 +132,7 @@
   /* 社群 / 名片卡（依品牌設定，未提供則自動省略，此份未使用） */
 
   footer.page-foot{
-    text-align:center;padding:26px 20px 10px;font-size:12.5px;color:#a39d8c;
+    text-align:center;padding:26px 20px 10px;font-size:12.5px;color:#8a97a6;
   }
 
   /* 浮動按鈕 */
@@ -157,16 +157,16 @@
 
 <div class="hero">
   <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
-    <rect x="60" y="90" width="110" height="90" rx="4" fill="#F1EDE5" stroke="#B89968" stroke-width="2"/>
-    <polygon points="52,95 115,50 178,95" fill="#B89968"/>
-    <rect x="98" y="130" width="34" height="50" fill="#FAF8F4" stroke="#B89968" stroke-width="2"/>
-    <circle cx="127" cy="155" r="2.4" fill="#B89968"/>
-    <rect x="150" y="60" width="70" height="86" rx="6" fill="#fff" stroke="#D9342B" stroke-width="2.5"/>
-    <line x1="160" y1="76" x2="210" y2="76" stroke="#E7DFD2" stroke-width="3"/>
-    <line x1="160" y1="88" x2="210" y2="88" stroke="#E7DFD2" stroke-width="3"/>
-    <text x="185" y="118" font-size="26" font-weight="900" text-anchor="middle" fill="#D9342B">%</text>
-    <line x1="160" y1="132" x2="200" y2="132" stroke="#E7DFD2" stroke-width="3"/>
-    <circle cx="222" cy="52" r="15" fill="#D9342B"/>
+    <rect x="60" y="90" width="110" height="90" rx="4" fill="#E7ECF1" stroke="#FFA93C" stroke-width="2"/>
+    <polygon points="52,95 115,50 178,95" fill="#FFA93C"/>
+    <rect x="98" y="130" width="34" height="50" fill="#F3F6F9" stroke="#FFA93C" stroke-width="2"/>
+    <circle cx="127" cy="155" r="2.4" fill="#FFA93C"/>
+    <rect x="150" y="60" width="70" height="86" rx="6" fill="#fff" stroke="#F28B2E" stroke-width="2.5"/>
+    <line x1="160" y1="76" x2="210" y2="76" stroke="#DCE3EA" stroke-width="3"/>
+    <line x1="160" y1="88" x2="210" y2="88" stroke="#DCE3EA" stroke-width="3"/>
+    <text x="185" y="118" font-size="26" font-weight="900" text-anchor="middle" fill="#F28B2E">%</text>
+    <line x1="160" y1="132" x2="200" y2="132" stroke="#DCE3EA" stroke-width="3"/>
+    <circle cx="222" cy="52" r="15" fill="#F28B2E"/>
     <text x="222" y="58" font-size="17" font-weight="900" text-anchor="middle" fill="#fff">!</text>
   </svg>
   <h1>你家的地價稅<br>可能多繳<span class="hl">5倍</span></h1>
@@ -174,7 +174,7 @@
 </div>
 
 <section class="card">
-  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="10" cy="10" r="7" stroke="#B89968" stroke-width="2"/><line x1="15" y1="15" x2="21" y2="21" stroke="#B89968" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="10" cy="10" r="7" stroke="#FFA93C" stroke-width="2"/><line x1="15" y1="15" x2="21" y2="21" stroke="#FFA93C" stroke-width="2" stroke-linecap="round"/></svg>
   <span class="tag">STEP 1</span>
   <h2 class="ctitle">先自我檢查，你被多收了嗎</h2>
   <p class="desc">地價稅有兩種稅率，差距最少5倍以上，而政府不會主動幫你換成便宜的那種。</p>
@@ -197,37 +197,37 @@
 </section>
 
 <section class="card">
-  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#B89968" stroke-width="2"/><path d="M8 11l2.5 2.5L16 8" stroke="#B89968" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#FFA93C" stroke-width="2"/><path d="M8 11l2.5 2.5L16 8" stroke="#FFA93C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span class="tag">STEP 2</span>
   <h2 class="ctitle">5個條件，看你符不符合資格</h2>
   <p class="desc">5項都符合，才能申請自用住宅優惠稅率。</p>
 
   <ul class="check-list">
     <li>
-      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#FFA93C"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>你本人、配偶或直系親屬其中一人，戶籍要遷進這塊土地。</span>
     </li>
     <li>
-      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#FFA93C"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>房子沒有出租，也沒有拿來做生意用。</span>
     </li>
     <li>
-      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#FFA93C"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>土地上的房子，產權要在你、配偶或直系親屬名下。</span>
     </li>
     <li>
-      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#FFA93C"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>你、配偶、未成年子女，全國地價稅自用稅率合計只能選一處。</span>
     </li>
     <li>
-      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#FFA93C"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>面積有上限，都市土地約90坪內、非都市土地約211坪內。</span>
     </li>
   </ul>
 </section>
 
 <section class="card">
-  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="#B89968" stroke-width="2"/><path d="M3 10h18" stroke="#B89968" stroke-width="2"/><path d="M8 7V4h8v3" stroke="#B89968" stroke-width="2"/></svg>
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="#FFA93C" stroke-width="2"/><path d="M3 10h18" stroke="#FFA93C" stroke-width="2"/><path d="M8 7V4h8v3" stroke="#FFA93C" stroke-width="2"/></svg>
   <span class="tag">STEP 3</span>
   <h2 class="ctitle">符合資格，怎麼申請</h2>
   <p class="desc">表單名稱是「地價稅自用住宅用地申請書」，三種方式都能送件。</p>
@@ -255,7 +255,7 @@
 </section>
 
 <section class="card">
-  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#D9342B" stroke-width="2"/><path d="M12 7v6l4 2" stroke="#D9342B" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#F28B2E" stroke-width="2"/><path d="M12 7v6l4 2" stroke="#F28B2E" stroke-width="2" stroke-linecap="round"/></svg>
   <span class="tag">STEP 4</span>
   <h2 class="ctitle">時間軸：慢一天都不划算</h2>
   <p class="desc">同一件事，早送跟晚送，差的是一整年的稅金。</p>
