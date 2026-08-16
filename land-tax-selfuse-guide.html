@@ -1,0 +1,295 @@
+<meta charset="UTF-8">
+<title>自用住宅稅率申請攻略｜中壢房產顧問 柚子</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --bg:#FAF8F4;
+    --ink:#2C2A26;
+    --gold:#B89968;
+    --brand:#D9342B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:110px;
+  }
+  .wrap{max-width:520px;margin:0 auto;padding:0 20px;}
+
+  /* 頁首 */
+  header.top{
+    display:flex;align-items:center;gap:10px;
+    padding:18px 20px;
+  }
+  header.top img{width:36px;height:36px;border-radius:8px;object-fit:cover;}
+  header.top .brand-name{font-size:15px;font-weight:700;letter-spacing:0.5px;}
+  header.top .brand-name b{color:var(--brand);font-weight:900;}
+
+  /* Hero */
+  .hero{padding:8px 20px 28px;text-align:center;}
+  .hero svg{width:100%;max-width:280px;height:auto;margin:0 auto 18px;display:block;}
+  .hero h1{font-size:25px;font-weight:900;line-height:1.5;letter-spacing:0.5px;}
+  .hero h1 .hl{color:var(--brand);}
+  .hero p.sub{margin-top:12px;font-size:14.5px;color:#5c5850;}
+
+  /* 章節卡片 */
+  section.card{
+    background:#fff;
+    border-radius:18px;
+    padding:22px 20px;
+    margin:16px 20px;
+    box-shadow:0 4px 18px rgba(44,42,38,0.06);
+    position:relative;
+  }
+  section.card .icon{
+    position:absolute;top:18px;right:18px;width:34px;height:34px;
+  }
+  .tag{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    color:var(--gold);
+    letter-spacing:1px;
+    margin-bottom:6px;
+  }
+  h2.ctitle{font-size:18.5px;font-weight:900;margin-bottom:4px;padding-right:40px;}
+  p.desc{font-size:14px;color:#5c5850;margin-bottom:14px;}
+
+  /* 稅率對比 bar */
+  .bar-row{margin-bottom:14px;}
+  .bar-label{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:5px;}
+  .bar-label b{font-weight:900;}
+  .bar-track{background:#F1EDE5;border-radius:8px;height:14px;overflow:hidden;}
+  .bar-fill{height:100%;border-radius:8px;}
+  .bar-fill.low{width:20%;background:var(--gold);}
+  .bar-fill.high{width:100%;background:var(--brand);}
+  .bar-note{margin-top:10px;font-size:13.5px;background:#FBF3EF;border-left:3px solid var(--brand);padding:10px 12px;border-radius:6px;}
+
+  /* 情境 list */
+  .situ-list{list-style:none;margin-top:4px;}
+  .situ-list li{
+    display:flex;gap:12px;align-items:flex-start;
+    padding:10px 0;border-top:1px solid #F0EDE6;
+    font-size:14px;
+  }
+  .situ-list li:first-child{border-top:none;}
+  .situ-num{font-weight:900;color:var(--gold);font-size:15px;min-width:26px;}
+
+  /* checklist */
+  .check-list{list-style:none;margin-top:4px;}
+  .check-list li{
+    display:flex;gap:10px;align-items:flex-start;
+    padding:9px 0;font-size:14px;
+    border-top:1px solid #F0EDE6;
+  }
+  .check-list li:first-child{border-top:none;}
+  .check-list li svg{flex-shrink:0;margin-top:2px;}
+
+  /* 流程 steps */
+  .step-list{margin-top:6px;}
+  .step{display:flex;gap:14px;padding:12px 0;border-top:1px dashed #E7E2D8;}
+  .step:first-child{border-top:none;}
+  .step .snum{font-size:22px;font-weight:900;color:var(--gold);min-width:30px;line-height:1.2;}
+  .step .stext b{display:block;font-size:14.5px;margin-bottom:2px;}
+  .step .stext span{font-size:13.5px;color:#5c5850;}
+
+  /* 時間軸 */
+  .timeline{margin-top:10px;}
+  .tl-item{display:flex;gap:14px;position:relative;padding-bottom:20px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-dot{width:12px;height:12px;border-radius:50%;margin-top:4px;flex-shrink:0;}
+  .tl-dot.ok{background:var(--gold);}
+  .tl-dot.bad{background:var(--brand);}
+  .tl-line{position:absolute;left:5px;top:16px;bottom:0;width:2px;background:#E7E2D8;}
+  .tl-text b{display:block;font-size:14.5px;}
+  .tl-text span{font-size:13.5px;color:#5c5850;}
+
+  .foot-note{
+    font-size:12.5px;color:#8a8578;
+    background:#F5F2EB;border-radius:10px;padding:12px 14px;margin-top:14px;
+  }
+
+  /* CTA */
+  .cta{
+    margin:24px 20px 8px;
+    background:linear-gradient(135deg,#2C2A26,#3d3a34);
+    color:#FAF8F4;
+    border-radius:18px;
+    padding:26px 22px;
+    text-align:center;
+  }
+  .cta h3{font-size:19px;font-weight:900;margin-bottom:8px;}
+  .cta p{font-size:14px;color:#D9D5C9;margin-bottom:6px;}
+  .cta .kw{
+    display:inline-block;margin-top:10px;
+    background:var(--brand);color:#fff;font-weight:900;
+    font-size:15px;padding:8px 22px;border-radius:999px;
+  }
+
+  /* 社群 / 名片卡（依品牌設定，未提供則自動省略，此份未使用） */
+
+  footer.page-foot{
+    text-align:center;padding:26px 20px 10px;font-size:12.5px;color:#a39d8c;
+  }
+
+  /* 浮動按鈕 */
+  .float-bar{
+    position:fixed;right:16px;bottom:18px;
+    display:flex;flex-direction:column;gap:10px;z-index:50;
+  }
+  .float-btn{
+    width:52px;height:52px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 16px rgba(0,0,0,0.18);
+    text-decoration:none;
+  }
+  .float-btn.line{background:#06C755;}
+  .float-btn.tel{background:var(--brand);}
+</style>
+
+<header class="top">
+  <img src="https://yozihouse.tw/assets/img/logo.png" alt="logo">
+  <div class="brand-name">中壢房產顧問 <b>柚子</b></div>
+</header>
+
+<div class="hero">
+  <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="60" y="90" width="110" height="90" rx="4" fill="#F1EDE5" stroke="#B89968" stroke-width="2"/>
+    <polygon points="52,95 115,50 178,95" fill="#B89968"/>
+    <rect x="98" y="130" width="34" height="50" fill="#FAF8F4" stroke="#B89968" stroke-width="2"/>
+    <circle cx="127" cy="155" r="2.4" fill="#B89968"/>
+    <rect x="150" y="60" width="70" height="86" rx="6" fill="#fff" stroke="#D9342B" stroke-width="2.5"/>
+    <line x1="160" y1="76" x2="210" y2="76" stroke="#E7DFD2" stroke-width="3"/>
+    <line x1="160" y1="88" x2="210" y2="88" stroke="#E7DFD2" stroke-width="3"/>
+    <text x="185" y="118" font-size="26" font-weight="900" text-anchor="middle" fill="#D9342B">%</text>
+    <line x1="160" y1="132" x2="200" y2="132" stroke="#E7DFD2" stroke-width="3"/>
+    <circle cx="222" cy="52" r="15" fill="#D9342B"/>
+    <text x="222" y="58" font-size="17" font-weight="900" text-anchor="middle" fill="#fff">!</text>
+  </svg>
+  <h1>你家的地價稅<br>可能多繳<span class="hl">5倍</span></h1>
+  <p class="sub">留言「地價稅」領取的懶人包，把自我檢查、申請資格到送件流程，一次幫你整理清楚。</p>
+</div>
+
+<section class="card">
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="10" cy="10" r="7" stroke="#B89968" stroke-width="2"/><line x1="15" y1="15" x2="21" y2="21" stroke="#B89968" stroke-width="2" stroke-linecap="round"/></svg>
+  <span class="tag">STEP 1</span>
+  <h2 class="ctitle">先自我檢查，你被多收了嗎</h2>
+  <p class="desc">地價稅有兩種稅率，差距最少5倍以上，而政府不會主動幫你換成便宜的那種。</p>
+
+  <div class="bar-row">
+    <div class="bar-label"><span>自用住宅優惠稅率</span><b>千分之2</b></div>
+    <div class="bar-track"><div class="bar-fill low"></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span>一般用地稅率</span><b>千分之10起</b></div>
+    <div class="bar-track"><div class="bar-fill high"></div></div>
+  </div>
+  <div class="bar-note">拿去年的地價稅單，看「稅率」那一欄，寫千分之10，你就是可能多繳的那一個。</div>
+
+  <ul class="situ-list" style="margin-top:16px;">
+    <li><span class="situ-num">01</span><span>剛買房，戶籍還沒遷過去，直接被歸類成一般稅率。</span></li>
+    <li><span class="situ-num">02</span><span>房子借給親戚朋友住，自己戶籍卻在別的地方。</span></li>
+    <li><span class="situ-num">03</span><span>名下有兩間以上的房子，卻沒有指定自用稅率要用哪一間。</span></li>
+  </ul>
+</section>
+
+<section class="card">
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#B89968" stroke-width="2"/><path d="M8 11l2.5 2.5L16 8" stroke="#B89968" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="tag">STEP 2</span>
+  <h2 class="ctitle">5個條件，看你符不符合資格</h2>
+  <p class="desc">5項都符合，才能申請自用住宅優惠稅率。</p>
+
+  <ul class="check-list">
+    <li>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>你本人、配偶或直系親屬其中一人，戶籍要遷進這塊土地。</span>
+    </li>
+    <li>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>房子沒有出租，也沒有拿來做生意用。</span>
+    </li>
+    <li>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>土地上的房子，產權要在你、配偶或直系親屬名下。</span>
+    </li>
+    <li>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>你、配偶、未成年子女，全國地價稅自用稅率合計只能選一處。</span>
+    </li>
+    <li>
+      <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#B89968"/><path d="M5 9l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>面積有上限，都市土地約90坪內、非都市土地約211坪內。</span>
+    </li>
+  </ul>
+</section>
+
+<section class="card">
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="#B89968" stroke-width="2"/><path d="M3 10h18" stroke="#B89968" stroke-width="2"/><path d="M8 7V4h8v3" stroke="#B89968" stroke-width="2"/></svg>
+  <span class="tag">STEP 3</span>
+  <h2 class="ctitle">符合資格，怎麼申請</h2>
+  <p class="desc">表單名稱是「地價稅自用住宅用地申請書」，三種方式都能送件。</p>
+
+  <div class="step-list">
+    <div class="step">
+      <div class="snum">01</div>
+      <div class="stext"><b>臨櫃辦理</b><span>桃園市桃園區成功路2段179號（桃園市地方稅務局總局）。</span></div>
+    </div>
+    <div class="step">
+      <div class="snum">02</div>
+      <div class="stext"><b>線上申辦</b><span>財政部稅務入口網「稅務線上申辦作業」，免出門。</span></div>
+    </div>
+    <div class="step">
+      <div class="snum">03</div>
+      <div class="stext"><b>郵寄申請</b><span>把申請書寄到地方稅務局，一樣有效。</span></div>
+    </div>
+    <div class="step">
+      <div class="snum">04</div>
+      <div class="stext"><b>等核准</b><span>一般案件約10天，需要現場會勘的案件約18天。</span></div>
+    </div>
+  </div>
+
+  <div class="foot-note">不是桃園的話，用你戶籍所在地的地方稅務局申請就好，流程大同小異。桃園諮詢專線：(03)3326181分機2373地價稅科。</div>
+</section>
+
+<section class="card">
+  <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#D9342B" stroke-width="2"/><path d="M12 7v6l4 2" stroke="#D9342B" stroke-width="2" stroke-linecap="round"/></svg>
+  <span class="tag">STEP 4</span>
+  <h2 class="ctitle">時間軸：慢一天都不划算</h2>
+  <p class="desc">同一件事，早送跟晚送，差的是一整年的稅金。</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-line"></div>
+      <div class="tl-dot ok"></div>
+      <div class="tl-text"><b>9月22日前送件</b><span>今年11月的地價稅單，就直接套用千分之2的優惠稅率。</span></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot bad"></div>
+      <div class="tl-text"><b>逾期才送件</b><span>優惠稅率要等到明年才生效，今年這一整年等於白白多繳。</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h3>不確定自己符不符合資格</h3>
+  <p>把你去年地價稅單「稅率」那欄的數字截圖給我，我幫你對照這5個條件，順便看看還有沒有其他能節稅的地方。</p>
+  <p>有關桃園房地產的問題，也歡迎找我聊聊。</p>
+  <div class="kw">留言「地價稅」私訊我</div>
+</div>
+
+<footer class="page-foot">
+  中壢房產顧問 柚子｜整理於 2026年8月<br>
+  各地方稅務局作業細節與應備文件可能略有差異，正式送件前建議先電洽當地地方稅務局確認。
+</footer>
+
+<div class="float-bar">
+  <a class="float-btn line" href="https://line.me/ti/p/1oOrGNBjI6" target="_blank" rel="noopener" aria-label="加LINE">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3C6.9 3 2.8 6.4 2.8 10.6c0 3.7 3.2 6.8 7.6 7.5-.3 1.1-1.1 3.9-1.2 4.5 0 0-.02.2.1.28.13.08.27.02.27.02.36-.05 4.1-2.7 5.8-3.9 4.6-.5 8.3-3.6 8.3-8.4C23.7 6.4 17.1 3 12 3z" fill="#fff"/></svg>
+  </a>
+  <a class="float-btn tel" href="tel:0968877611" aria-label="打電話">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.7c0-.6.5-1.1 1.1-1.1h3.3c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z" fill="#fff"/></svg>
+  </a>
+</div>
