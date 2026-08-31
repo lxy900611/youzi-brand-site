@@ -59,6 +59,14 @@
     },
     {
       "@type": "Question",
+      "name": "我還沒想到要拍什麼主題怎麼辦？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先用頁面上的「選題探索指令」。給 AI 一個大方向，例如「瘦瘦針」，它會列出最近討論度高、可拍的 8 個選題並幫你挑一個，再把選到的選題貼進「完整文案指令」即可。"
+      }
+    },
+    {
+      "@type": "Question",
       "name": "為什麼逐字稿要用簡體中文？",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -291,7 +299,7 @@
 <section class="guide-hero">
   <p class="eyebrow">短影音文案指令</p>
   <h1>一個<mark>選題</mark>丟進去，<br>三分鐘生出一支口播稿</h1>
-  <p>這是我自己在用的 AI 指令。複製整段、填一個題目，就會吐出「三層決策 → 口播逐字稿 → 拍攝建議」，而且是黑卷、HeyGen 直接能用的版本。</p>
+  <p>這是我自己在用的一組 AI 指令。先讓 AI 幫你挑一個熱門選題，再複製、填進去，就會吐出「三層決策 → 口播逐字稿 → 拍攝建議」，而且是黑卷、HeyGen 直接能用的版本。</p>
 </section>
 
 <div class="quote-block">
@@ -312,24 +320,31 @@
 
 <!-- 怎麼用 -->
 <section class="guide-section guide-alt">
-  <h2><span class="num">2</span>三步驟：怎麼用</h2>
+  <h2><span class="num">2</span>四步驟：怎麼用</h2>
   <div class="step-list">
     <div class="step-item">
       <div class="step-num">1</div>
       <div class="step-body">
-        <h3>複製下面整段指令</h3>
-        <p>點「複製指令」按鈕，整段一次帶走。貼到 ChatGPT、Claude 或 Gemini 的對話框都可以。</p>
+        <h3>先決定一個大方向</h3>
+        <p>例如「瘦瘦針」「牙齒美白」「租屋糾紛」「房貸」。一個關鍵字或一個產業就夠，還不用想到確切的影片題目。</p>
       </div>
     </div>
     <div class="step-item">
       <div class="step-num">2</div>
       <div class="step-body">
-        <h3>把最後一行的「選題」換成你的題目</h3>
-        <p>例如「洗牙會不會讓牙縫變大」「租屋看到這 3 種房東快跑」。題目講得越像一般人會遇到的日常事，效果越好。</p>
+        <h3>用「選題探索指令」讓 AI 列選題</h3>
+        <p>複製下面第 3 段，把大方向填進去。AI 會給你 8 個最近討論度高、可拍的選題，還會幫你挑一個最容易爆的。</p>
       </div>
     </div>
     <div class="step-item">
       <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>把選到的題目貼進「完整文案指令」送出</h3>
+        <p>複製第 4 段，把最後一行「選題：」換成剛剛挑的那個，送出。就會生出三層決策摘要、口播逐字稿、拍攝建議。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
       <div class="step-body">
         <h3>拿逐字稿去配音、生影片</h3>
         <p>簡體逐字稿貼進黑卷產生 AI 配音，或直接貼進 HeyGen 選虛擬主播、中文語音、9:16 直式、開字幕輸出。片尾品牌字卡自己另外加。</p>
@@ -338,9 +353,34 @@
   </div>
 </section>
 
+<!-- 選題探索 -->
+<section class="guide-section">
+  <h2><span class="num">3</span>先選主題：選題探索指令</h2>
+  <p>還沒想到要拍什麼？先給 AI 一個大方向（例如「瘦瘦針」），讓它把最近的熱門角度整理成一串可拍的選題，你再挑一個。</p>
+  <div class="prompt-box">
+    <div class="prompt-bar">
+      <strong>選題探索・AI 指令</strong>
+      <button class="copy-btn" type="button">複製指令</button>
+    </div>
+    <pre>你是短影音選題企劃。我給你一個「主題方向」，你幫我找選題。
+
+主題方向：（在這裡填，例如：瘦瘦針 / 牙齒美白 / 租屋糾紛 / 房貸）
+
+要求：
+1. 找最近 3 個月討論度高、一般大眾有感、適合做短影音的角度，列 8 個。
+2. 每個選題寫成「觀眾看得懂的一句話標題」，不是新聞標題，不要行業黑話。
+3. 每個選題後面標上三個標籤：建議主情緒（七宗罪擇一：懶惰／憤怒／貪婪／暴食／淫欲／嫉妒／傲慢）、建議內容模板（八大擇一：講故事／蹭熱點／曬過程／站立場／教知識／傳遞溫度／賣產品／跟拍段子）、一句話說明「為什麼現在會紅」。
+4. 需要就上網查最新事件或數據，不可以編造。
+5. 最後從 8 個裡挑出你認為最容易爆的 1 個，說明原因。
+
+輸出用條列或表格，簡潔就好。</pre>
+  </div>
+  <p class="fill-hint">挑好一個選題後，把它填進下一段「完整文案指令」最後一行的 <code>選題：</code>。</p>
+</section>
+
 <!-- 指令本體 -->
 <section class="guide-section">
-  <h2><span class="num">3</span>完整指令（可直接複製）</h2>
+  <h2><span class="num">4</span>完整文案指令（可直接複製）</h2>
   <div class="prompt-box">
     <div class="prompt-bar">
       <strong>短影音文案・AI 指令</strong>
@@ -399,7 +439,7 @@ Hook 真的從公式生出來？前 3 秒讓人想看下去？骨架有照三步
 
 <!-- 邏輯說明 -->
 <section class="guide-section guide-alt">
-  <h2><span class="num">4</span>指令背後的三套系統</h2>
+  <h2><span class="num">5</span>指令背後的三套系統</h2>
   <div class="reason-card">
     <h3>① 七宗罪情緒引擎 —— 負責「開頭 3 秒」</h3>
     <p>懶惰、憤怒、貪婪、嫉妒、傲慢⋯每一種觀眾情緒都對應一句 Hook 填空公式。AI 不用「想」開場白，直接把你的選題塞進公式的空格，生出反常識或帶挑釁的第一句。</p>
@@ -416,7 +456,7 @@ Hook 真的從公式生出來？前 3 秒讓人想看下去？骨架有照三步
 
 <!-- 檢查清單 -->
 <section class="guide-section">
-  <h2><span class="num">5</span>丟進黑卷 / HeyGen 前，檢查這幾項</h2>
+  <h2><span class="num">6</span>丟進黑卷 / HeyGen 前，檢查這幾項</h2>
   <ul class="checklist">
     <li>逐字稿已經是簡體中文</li>
     <li>已逐字掃過多音字（长、行、倒、重、磨⋯），會念錯的都換掉或改寫</li>
@@ -479,27 +519,6 @@ Hook 真的從公式生出來？前 3 秒讓人想看下去？骨架有照三步
 
 <script>
   (function () {
-    var btn = document.getElementById('copyBtn');
-    var src = document.getElementById('promptText');
-    if (!btn || !src) return;
-    btn.addEventListener('click', function () {
-      var text = src.innerText;
-      var done = function () {
-        btn.textContent = '已複製 ✓';
-        btn.classList.add('done');
-        setTimeout(function () {
-          btn.textContent = '複製指令';
-          btn.classList.remove('done');
-        }, 2000);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done).catch(function () {
-          fallback(text, done);
-        });
-      } else {
-        fallback(text, done);
-      }
-    });
     function fallback(text, cb) {
       var ta = document.createElement('textarea');
       ta.value = text;
@@ -511,6 +530,28 @@ Hook 真的從公式生出來？前 3 秒讓人想看下去？骨架有照三步
       document.body.removeChild(ta);
       cb();
     }
+    function wire(box) {
+      var btn = box.querySelector('.copy-btn');
+      var src = box.querySelector('pre');
+      if (!btn || !src) return;
+      btn.addEventListener('click', function () {
+        var text = src.innerText;
+        var done = function () {
+          btn.textContent = '已複製 ✓';
+          btn.classList.add('done');
+          setTimeout(function () {
+            btn.textContent = '複製指令';
+            btn.classList.remove('done');
+          }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function () { fallback(text, done); });
+        } else {
+          fallback(text, done);
+        }
+      });
+    }
+    document.querySelectorAll('.prompt-box').forEach(wire);
   })();
 </script>
 
