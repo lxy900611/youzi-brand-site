@@ -82,6 +82,46 @@
         "@type": "Answer",
         "text": "這次央行決議調整的是自然人第二戶購屋貸款成數上限，並放寬購地貸款動工期限規定。第一戶房貸政策未在本次會議中調整。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "第二戶貸款有寬限期嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "沒有。2024年9月設下的「第2戶無寬限期」規定這次沒有鬆動，一開始就是本息一起還。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "成數是算在成交價還是鑑價金額？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "算在銀行的鑑價金額，不是買賣成交價。鑑價偏低，實際貸得到的金額會跟著縮水，不是總價的7成。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "第三戶以上這次有放寬嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "沒有。第3戶（含）以上、高價住宅、公司法人購置住宅維持3成上限，這次只調整第2戶。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "先買後賣還是先賣後買，哪個資金壓力小？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "沒有標準答案，要看自備款夠不夠、能不能承受兩間房貸同時存在的月付壓力，建議找熟悉在地行情的顧問一起試算。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "這個政策是全國一體適用，還是只有部分縣市？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "全國一體適用，不是只有特定縣市，中壢、平鎮跟其他縣市適用同一套規定。"
+      }
     }
   ]
 }
@@ -234,6 +274,43 @@
     max-width: 640px;
     margin: 0 auto 8px;
   }
+
+  .compare-table-wrap { overflow-x: auto; margin: 0 0 18px; }
+  .compare-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+  .compare-table th, .compare-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .compare-table th { color: var(--navy); font-size: 0.82rem; }
+  .compare-table td { color: var(--text); }
+  .compare-table .hl-cell { color: var(--gold); font-weight: 700; }
+  .compare-table tbody tr:last-child td { border-bottom: none; }
+
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: flex; gap: 18px; padding: 0 0 22px; position: relative; }
+  .timeline li:not(:last-child)::before {
+    content: ""; position: absolute; left: 9px; top: 26px; bottom: -4px; width: 2px; background: var(--border);
+  }
+  .timeline .tl-dot {
+    flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--gold); margin-top: 2px; position: relative; z-index: 1;
+  }
+  .timeline .tl-dot.tl-now { background: var(--navy); }
+  .timeline .tl-body h3 { margin: 0 0 4px; color: var(--navy); font-size: 1rem; }
+  .timeline .tl-body p { margin: 0; color: var(--text-muted); font-size: 0.92rem; }
+
+  .warn-card {
+    background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--navy);
+    border-radius: 10px; padding: 18px 20px; margin-bottom: 16px;
+  }
+  .warn-card h3 { margin: 0 0 6px; color: var(--navy); font-size: 1.02rem; }
+  .warn-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+  .split-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 600px) { .split-cols { grid-template-columns: 1fr; } }
+  .split-col { padding: 16px 18px; border-radius: 10px; }
+  .split-col.col-yes { background: var(--bg-alt); border: 1px solid var(--border); }
+  .split-col.col-no { background: #fff; border: 1px dashed var(--border); }
+  .split-col h3 { margin: 0 0 10px; font-size: 0.98rem; color: var(--navy); }
+  .split-col ul { margin: 0; padding-left: 18px; color: var(--text-muted); font-size: 0.9rem; }
+  .split-col li { margin-bottom: 6px; }
 </style>
 </head>
 <body>
@@ -266,49 +343,129 @@
   <span>—— 央行理監事會議決議背景，2026年9月</span>
 </div>
 
-<!-- 這次決議了什麼 -->
+<!-- 1. 30秒看懂 -->
 <section class="guide-section">
-  <h2><span class="num">1</span>央行這次決議了什麼</h2>
-  <p>2026年9月17日，央行召開理監事會議。利率維持不變，連續第十次凍結（重貼現率2%、擔保放款融通利率2.375%、短期融通利率4.25%）。</p>
-  <p>但房市這邊，動作不小：<strong>自然人第二戶購屋貸款，最高貸款成數從6成調升到7成，9月18日起實施。</strong></p>
-  <p>銀行辦理購地貸款，原本要求一定期間內動工，這個規定也放寬了，給建商多一點土地開發的彈性。</p>
+  <h2><span class="num">1</span>30秒看懂：這次改了什麼</h2>
+  <p>2026年9月17日，央行召開理監事會議。利率維持不變，連續第十次凍結（重貼現率2%、擔保放款融通利率2.375%、短期融通利率4.25%）。房市這邊，動作不小。</p>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>項目</th><th>9/18 以前</th><th>9/18 起</th></tr></thead>
+      <tbody>
+        <tr><td>自然人第2戶購屋貸款成數上限</td><td>6成</td><td class="hl-cell">7成</td></tr>
+        <tr><td>購地貸款動工期限規定</td><td>須於一定期間內動工</td><td class="hl-cell">規定放寬</td></tr>
+        <tr><td>第2戶貸款寬限期</td><td>無</td><td>無（沒有變）</td></tr>
+        <tr><td>第3戶(含)以上、高價住宅、公司法人</td><td>3成</td><td>3成（沒有變）</td></tr>
+        <tr><td>政策利率（重貼現率）</td><td>2%</td><td>2%（連10凍）</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>這次只調整第2戶購屋貸款成數與購地貸款動工規定，全國一體適用，不分縣市。第3戶以上、高價住宅、公司法人貸款維持3成沒有放寬。</p>
 </section>
 
-<!-- 為什麼是現在鬆綁 -->
+<!-- 2. 時間軸 -->
 <section class="guide-section guide-alt">
-  <h2><span class="num">2</span>為什麼是現在放寬</h2>
-  <p>今年3月那一波限貸令之後，全體銀行不動產貸款占總放款的比率，從35.56%降到34.44%。</p>
-  <p>市場降溫了，投機減少了，看漲預期也跟著鬆動。央行選擇現在放寬，等於是給市場一個訊號：緊縮已經看到效果，可以稍微鬆一點手。</p>
+  <h2><span class="num">2</span>政策時間軸：從緊縮到兩次放寬</h2>
+  <ul class="timeline">
+    <li>
+      <div class="tl-dot" style="background:var(--text-muted);"></div>
+      <div class="tl-body">
+        <h3>2024/9/20 — 第七波信用管制上路</h3>
+        <p>第2戶成數由6成降為5成並擴大到全國、第1戶取消寬限期、第3戶以上與高價住宅降到3成，是這一輪緊縮的起點。</p>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot"></div>
+      <div class="tl-body">
+        <h3>2026/3/20 — 第一次放寬</h3>
+        <p>第2戶成數由5成調升到6成，理由是投機氛圍趨緩、銀行不動產授信風險趨穩，這是緊縮以來第一次正向調整。</p>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot tl-now"></div>
+      <div class="tl-body">
+        <h3>2026/9/18 — 再放寬（現在）</h3>
+        <p>第2戶成數由6成調升到7成，購地貸款動工期限同步放寬。第2戶依然沒有寬限期。</p>
+      </div>
+    </li>
+  </ul>
+  <p>從5成到7成，一年半內央行連續兩次放寬第2戶成數，但緊縮起點設下的「無寬限期」「高價住宅3成」這些防線，一次都沒有鬆動。</p>
 </section>
 
-<!-- 誰受益 -->
+<!-- 3. 真實試算 -->
 <section class="guide-section">
-  <h2><span class="num">3</span>誰受益最大？3種人</h2>
-  <div class="reason-card">
-    <h3>① 換屋族</h3>
-    <p>手上一間要賣、還沒賣掉就想先買下一間，第二戶貸款成數提高，資金壓力小很多。</p>
+  <h2><span class="num">3</span>真實試算：自備款省多少、月付多繳多少</h2>
+  <p>用五大銀行2026年7月新承作房貸平均利率約2.29%（央行公布數據，估算取2.3%）、30年期本息平均攤還試算，3種房價的差異：</p>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>房屋總價</th><th>6成自備款</th><th>7成自備款</th><th>自備款省下</th><th>月付多繳</th></tr></thead>
+      <tbody>
+        <tr><td>800萬</td><td>320萬</td><td>240萬</td><td class="hl-cell">80萬</td><td>+3,078元</td></tr>
+        <tr><td>1000萬</td><td>400萬</td><td>300萬</td><td class="hl-cell">100萬</td><td>+3,848元</td></tr>
+        <tr><td>1200萬</td><td>480萬</td><td>360萬</td><td class="hl-cell">120萬</td><td>+4,618元</td></tr>
+      </tbody>
+    </table>
   </div>
-  <div class="reason-card">
-    <h3>② 自住第二戶買方</h3>
-    <p>真的要買第二間自住，例如幫爸媽或小孩買房，這批人現金卡關的狀況會改善。</p>
-  </div>
-  <div class="reason-card">
-    <h3>③ 建商</h3>
-    <p>動工期限鬆綁，土地開發的彈性變大，供給端的壓力也會跟著調整。</p>
+  <p>成數拉高的效果很清楚：<strong>自備款門檻降低，但貸款總額變大，月付金也跟著增加。</strong>省下的自備款不是白拿的，是換成每個月要多繳的錢，這筆帳要自己先算過，不是看到「上限拉高」就直接衝。</p>
+  <p class="source-note">試算為估算值，實際利率、成數依個人信用條件與承作銀行核定為準。</p>
+</section>
+
+<!-- 4. 沒有變的 -->
+<section class="guide-section guide-alt">
+  <h2><span class="num">4</span>沒有變的：無寬限期依然是鐵律</h2>
+  <p>這次放寬只動了「成數」，2024年9月就設下的「第2戶無寬限期」規定完全沒有鬆動。</p>
+  <div class="warn-card">
+    <h3>沒有寬限期代表什麼</h3>
+    <p>貸款一開始就是本息一起還，不像有寬限期時前幾年可以只繳利息。對換屋族來說，如果手上第一間房貸還沒繳清、第二間又要開始還本金，兩筆本息壓力是同時存在的，不能只看成數拉高就以為壓力變小。</p>
   </div>
 </section>
 
-<!-- 房價會不會漲 -->
+<!-- 5. 上限不是保證 -->
+<section class="guide-section">
+  <h2><span class="num">5</span>上限不是保證：3個卡關因素</h2>
+  <p>7成是「最高上限」，不是「保證核貸」。銀行實際會不會貸給你7成，還要看三件事。</p>
+  <div class="reason-card">
+    <h3>① 銀行自己的放款水位</h3>
+    <p>各銀行的不動產放款占比都有內控上限，水位滿了，就算政策允許7成，銀行也可能主動收緊。</p>
+  </div>
+  <div class="reason-card">
+    <h3>② 個人收入與負債比</h3>
+    <p>月付金占月收入的比例（DBR）、名下其他貸款，都會影響銀行核貸的實際成數與利率。</p>
+  </div>
+  <div class="reason-card">
+    <h3>③ 鑑價結果</h3>
+    <p>貸款成數是算在「銀行鑑價金額」，不是你的買賣成交價。鑑價偏低，實際貸得到的金額就會跟著縮水。</p>
+  </div>
+  <p>建議至少問過2-3家銀行的估貸，不要只問一家就當作定案。</p>
+</section>
+
+<!-- 6. 誰適用、誰不適用 -->
 <section class="guide-section guide-alt">
-  <h2><span class="num">4</span>房價會不會漲</h2>
-  <p>沒人能保證會漲，任何講死的人都是在賭。</p>
-  <p>有仲介已經在說，第四季有機會溫和回溫——這是市場的普遍解讀，不是保證。實際走向還要看供給、需求、整體經濟狀況一起判斷。</p>
-  <p>你現在手上如果有換屋、或幫家人買房的計畫，這個政策直接影響你的資金安排，值得認真對一次。</p>
+  <h2><span class="num">6</span>中壢、平鎮，誰適用、誰不適用</h2>
+  <div class="split-cols">
+    <div class="split-col col-yes">
+      <h3>✅ 適用、有感</h3>
+      <ul>
+        <li>換屋族——手上一間要賣、還沒賣掉就想先買下一間</li>
+        <li>自住第二戶買方——幫爸媽或小孩在中壢平鎮買房</li>
+        <li>建商——動工期限鬆綁，土地開發彈性變大</li>
+      </ul>
+    </div>
+    <div class="split-col col-no">
+      <h3>❌ 不適用、沒差</h3>
+      <ul>
+        <li>第3戶（含）以上——維持3成，這次沒放寬</li>
+        <li>公司法人購置住宅——維持3成</li>
+        <li>高價住宅貸款——維持3成</li>
+        <li>單純第1戶自住——這次調整的是第2戶，第1戶規定沒變</li>
+      </ul>
+    </div>
+  </div>
+  <p>中壢、平鎮目前多數住宅總價落在這篇試算的800萬~1200萬區間，是這次政策最直接照顧到的族群，跟高價住宅、第3戶以上的投資客沒有關係。</p>
 </section>
 
 <!-- FAQ -->
 <section class="guide-section">
-  <h2><span class="num">5</span>常見問題 Q&amp;A</h2>
+  <h2><span class="num">7</span>常見問題 Q&amp;A</h2>
   <div class="faq-item">
     <h3>Q：第二戶房貸成數7成，是所有人都適用嗎？</h3>
     <p>A：適用對象是自然人購買第二戶住宅，且屬於本人或家人自住需求。實際核貸成數仍依銀行對個人信用、還款能力的評估而定，7成是上限，不是保證值。</p>
@@ -321,19 +478,62 @@
     <h3>Q：第一戶房貸成數也有調整嗎？</h3>
     <p>A：這次央行決議調整的是自然人第二戶購屋貸款成數上限，並放寬購地貸款動工期限規定。第一戶房貸政策未在本次會議中調整。</p>
   </div>
+  <div class="faq-item">
+    <h3>Q：第二戶貸款有寬限期嗎？</h3>
+    <p>A：沒有。2024年9月設下的「第2戶無寬限期」規定這次沒有鬆動，一開始就是本息一起還。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：成數是算在成交價還是鑑價金額？</h3>
+    <p>A：算在銀行的鑑價金額，不是買賣成交價。鑑價偏低，實際貸得到的金額會跟著縮水，不是總價的7成。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：第三戶以上這次有放寬嗎？</h3>
+    <p>A：沒有。第3戶（含）以上、高價住宅、公司法人購置住宅維持3成上限，這次只調整第2戶。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：先買後賣還是先賣後買，哪個資金壓力小？</h3>
+    <p>A：沒有標準答案，要看你的自備款夠不夠、能不能承受兩間房貸同時存在的月付壓力。這正是留言後我會幫你對的部分，每個人的狀況不一樣。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q：這個政策是全國一體適用，還是只有部分縣市？</h3>
+    <p>A：全國一體適用，不是只有特定縣市。中壢、平鎮跟其他縣市適用同一套規定。</p>
+  </div>
 </section>
 
-<!-- 檢查清單 -->
+<!-- 8. 馬上該做的事 -->
 <section class="guide-section guide-alt">
-  <h2><span class="num">6</span>換屋族資金安排檢查清單</h2>
+  <h2><span class="num">8</span>馬上該做的3件事</h2>
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>用真實數字重新試算</h3>
+        <p>不要只看自備款省了多少，把新的月付金也算進去，確認自己扛得住兩筆房貸同時存在的壓力（尤其沒有寬限期）。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>問2-3家銀行的估貸</h3>
+        <p>7成是上限不是保證，實際成數看銀行水位、你的收入負債比、鑑價結果。多問幾家，才知道自己真正貸得到多少。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>確認換屋順序</h3>
+        <p>先買後賣、還是先賣後買，資金壓力差很多。這一步最好找熟悉在地行情的顧問一起對，不要自己憑感覺決定。</p>
+      </div>
+    </div>
+  </div>
   <ul class="checklist">
     <li>已確認手上物件的預期成交價與時程</li>
-    <li>已用新的7成成數，重新試算第二戶貸款金額</li>
+    <li>已用新的7成成數，重新試算第二戶貸款金額與月付</li>
     <li>已確認自己的信用狀況與還款能力是否符合銀行核貸標準</li>
     <li>已比較「先買後賣」與「先賣後買」，哪種資金壓力較小</li>
     <li>已諮詢房仲或貸款專員，確認個人狀況適用哪種方案</li>
   </ul>
-  <p class="source-note">內容整理自央行官方新聞稿與公開新聞報導（中央社、Newtalk），僅供參考，實際貸款成數與利率請以銀行核定為準。</p>
+  <p class="source-note">內容整理自央行官方新聞稿與公開新聞報導（中央社、Newtalk），試算利率取自央行公布之五大銀行新承作房貸平均利率，僅供參考，實際貸款成數與利率請以銀行核定為準。</p>
 </section>
 
 <!-- CTA -->
